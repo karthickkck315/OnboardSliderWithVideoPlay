@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ecg-ul-Jhg">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboard Slide-->
+        <scene sceneID="wQu-V6-h0J">
+            <objects>
+                <viewController storyboardIdentifier="OnboardSlide" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ecg-ul-Jhg" customClass="OnboardSlide" customModule="Voj_Voj" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yrk-pe-2Xj"/>
+                        <viewControllerLayoutGuide type="bottom" id="TzY-P1-FNQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iV5-AG-TvC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MEx-KU-HIr" customClass="SwiftyOnboard" customModule="Voj_Voj" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="15" width="393" height="837"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2S0-Ia-GXj"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MEx-KU-HIr" firstAttribute="bottom" secondItem="2S0-Ia-GXj" secondAttribute="bottom" constant="34" id="m71-3Y-oO5"/>
+                            <constraint firstItem="MEx-KU-HIr" firstAttribute="trailing" secondItem="2S0-Ia-GXj" secondAttribute="trailing" id="sEa-LF-S4V"/>
+                            <constraint firstItem="MEx-KU-HIr" firstAttribute="leading" secondItem="2S0-Ia-GXj" secondAttribute="leading" id="scO-6X-ZUQ"/>
+                            <constraint firstItem="MEx-KU-HIr" firstAttribute="top" secondItem="2S0-Ia-GXj" secondAttribute="top" constant="-44" id="uhV-dm-4rW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="onboardSlides" destination="MEx-KU-HIr" id="jri-IB-oZc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdA-5j-zFD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-361" y="-97"/>
+        </scene>
+    </scenes>
+</document>
